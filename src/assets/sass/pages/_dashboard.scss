@@ -1,0 +1,40 @@
+.circle {
+  height: 80px;
+  width: 80px;
+  border-radius: 50%;
+  border: 7px solid;
+  position: relative;
+  &--success{
+    background: $color-success;
+    border-color: $color-success-ol;
+  }
+  &--danger{
+    background: $color-danger;
+    border-color: $color-danger-ol;
+  }
+  &--primary{
+    background: $color-primary;
+    border-color: $color-primary-ol;
+  }
+  &--secondary{
+    background: $color-secondary;
+    border-color: $color-secondary-ol;
+  }
+  .svg-icon{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    right: 0;
+    bottom: 0;
+    -webkit-transform: translate(-50%, -50%);
+            transform: translate(-50%, -50%);
+    width: 32px;
+    height: 32px;
+    fill: #fff;
+  }
+  // mano nd bandymai
+  &--small{
+    height: 40px;
+    width: 40px;
+  }
+}

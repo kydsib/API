@@ -1,0 +1,43 @@
+.side-menu{
+  position: fixed;
+  top: $nav-height;
+  height: 100%;
+  background: #fff;
+  width: $nav-left-width;
+  box-shadow: $box-shadow;
+  overflow: scroll;
+  padding: 20px 0px 80px;
+  &__lists{
+    &__list{
+      padding: 12px 20px;
+      position: relative;
+      &:hover{
+        background-color: #fff;
+
+        border-left: 4px solid $default-bg;
+      }
+      a{
+        display: flex;
+        align-items: center;
+        color: inherit;
+        text-decoration: none;
+        svg{
+          margin-right: 10px;
+        }
+
+      }
+      &:after{
+        @include arrow();
+      }
+      &.active{
+        a{
+          color: red;
+        }
+      }
+    }
+    &__title{
+      padding: 12px 20px;
+      font-size: 12px;
+    }
+  }
+}

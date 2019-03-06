@@ -1,0 +1,24 @@
+.svg-icon{
+  height: 24px;
+  width: 24px;
+  fill: rgba(108, 122, 137, 1);
+}
+
+.svg-logo {
+  fill: #fff;
+  height: 24px;
+  width: 24px;
+}
+
+@mixin arrow($color: rgba(108, 122, 137, 1)) { // sklaisutuose galima rasyti parametrus
+  content: " ";
+  border: solid $color;
+  position: absolute;
+  right: 20px;
+  top: 45%;
+  transform: translateY(-50%);
+  border-width: 0 3px 3px 0;
+  display: inline-block;
+  padding: 3px;
+  transform: rotate(-45deg);
+}

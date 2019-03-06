@@ -1,0 +1,31 @@
+.section-container {
+  margin-top: $nav-height + 20;
+  margin-left: $nav-left-width + 15;
+}
+
+.boxes {
+  -webkit-box-shadow: $box-shadow;
+          box-shadow: $box-shadow;
+  border-right: $border-radius;
+  background: #fff;
+  padding: 15px;
+  text-align: right;
+  margin-bottom: 15px;
+  &--txtleft{ // mano bandymai namie
+    text-align: left;
+
+  }
+}
+
+// Mano 
+
+.content{
+  padding-top: 15px;
+  position: relative;
+  height: 150px;
+  .circle{
+    position: absolute;
+    top: 20%;
+    left: 40%;
+  }
+}

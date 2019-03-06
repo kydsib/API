@@ -1,0 +1,48 @@
+
+.topbar{
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 999;
+    display: grid; // Testinu
+    grid-template-columns: $nav-left-width auto;
+    margin: 0 auto;
+    width: 100%;
+    .nav-bar{
+        height: $nav-height;
+        background: $default-bg;
+        align-items: center;
+
+        color: #fff;
+        display: flex;
+        justify-content: center;
+        &--left{
+            width: $nav-left-width;
+
+        }
+        &--right{
+
+            display: grid;
+            grid-template-columns: 8fr 2fr;
+
+            min-height: $nav-height;
+        }
+        &__lists{
+            display: flex;
+            flex-direction: row;
+            &--left{
+            justify-content: space-between;
+            }
+            &--right{
+            justify-content: space-around;
+            }
+            &__link{
+
+            }
+            &--svg-icon{
+              height: 30px;
+              
+            }
+        }
+    }
+}

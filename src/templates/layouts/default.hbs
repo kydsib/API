@@ -2,11 +2,20 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <title>Document</title>
+  <title></title>
+  <link rel="stylesheet" href="assets/css/app.css">
 </head>
 <body>
+  {{>navbar}}
+
+  <div class="section-container">
     {{body}}
+  </div>
+    {{>sidebar}}
+    {{>main}}
+    {{#is basename 'index'}}
+    {{>footer}}
+    {{/is}}
+    <div class="svg-sprite-container">{{> 'sprite.symbol' }}</div> <!-- kad veiktu svg sprite ir loudintu failus -->
 </body>
 </html>

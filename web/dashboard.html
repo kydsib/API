@@ -1,48 +1,367 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
-  <title></title>
   <link rel="stylesheet" href="assets/css/app.css">
+
+  <title></title>
+
+      <link rel="stylesheet" href="../assets/css/app.css">
+
 </head>
-<body>
+
+<body class="bg-color-gray">
   <div class="topbar">
-      <nav class="nav-bar nav-bar--left">
-          <ul class="nav-bar__lists">
-              <li>
-                <svg class="svg-logo">
+    <nav class="nav-bar nav-bar--left">
+      <ul class="nav-bar__lists">
+        <li class="nav-bar__lists__link">
+          <a class="" href="#">
+          <svg class="svg-icon">
+            <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#maps"></use>
+          </svg>
+  
+          <span>Title</span>
+        </a>
+        </li>
+      </ul>
+    </nav>
+    <nav class="nav-bar nav-bar--right">
+      <ul class="nav-bar__lists nav-bar__lists--left">
+  
+        <li class="nav-bar__lists__link">
+          <a href="#" id="burger">
+            <svg class="svg-logo">
+              <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#maps"></use>
+            </svg>
+        </a>
+      </li>
+      </ul>
+  
+      <!-- right side nav menu and drop downs -->
+      <ul class="nav-bar__lists nav-bar__lists--right">
+        <!-- start of first drop down -->
+  
+        <li class="nav-bar__lists__link">
+          <a href="#" role="button" id="notifications" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+            <svg class="svg-logo">
+              <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#maps"></use>
+            </svg>
+          </a>
+        </li>
+  
+        <li class="nav-bar__lists__link">
+          <a href="#" role="button" id="activities" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+            <svg class="svg-logo">
+              <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#maps"></use>
+            </svg>
+          </a>
+          <div class="dropdown-menu" aria-labelledby="activities">
+            <a class="dropdown-menu__item" href="#">
+              <div class="circle circle--danger">
+                <svg class="svg-icon">
                   <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#maps"></use>
                 </svg>
-                <a class="nav-bar__lists__link nav-bar__list__link--logo" href="#">ADMIN</a>
-              </li>
-          </ul>
-      </nav>
-      <nav class="nav-bar nav-bar--right">
-          <ul class="nav-bar__lists nav-bar__lists--left">
-            <svg class="nav-bar__lists nav-bar__lists--svg-icon">
-              <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#Ukit"></use>
+              </div>
+              <div class="dropdown-menu__item__title">
+                <h5>Robert</h5>
+                <p class="">1min</p>
+              </div>
+            </a>
+            <a class="dropdown-menu__item" href="#">
+              <div class="circle circle--success">
+                <svg class="svg-icon">
+                  <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#maps"></use>
+                </svg>
+              </div>
+              <div class="dropdown-menu__item__title">
+                <h5>Robert</h5>
+                <p class="">1min</p>
+              </div>
+            </a>
+            <a class="dropdown-menu__item" href="#">
+              <div class="circle circle--secondary">
+                <svg class="svg-icon">
+                  <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#maps"></use>
+                </svg>
+              </div>
+              <div class="dropdown-menu__item__title">
+                <h5>Robert</h5>
+                <p class="">1min</p>
+              </div>
+            </a>
+          </div>
+        </li>
+  
+        <!-- end of first drop down -->
+  
+        <!-- start of second drop down -->
+        <!-- <li class="nav-bar__lists__link">
+          <a href="#" role="button" id="notifications" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+            <svg class="svg-logo">
+              <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#maps"></use>
             </svg>
-              <li><a class="nav-bar__lists__link" href="#"></a>BURGER</li>
-              <div class="tevinis su gera klase">
-              <input class="nav-bar__lists__search" type="text" placeholder="Search.." name="search"></input>
-                <!-- <svg class="cia eis looking glas svg dalykai"></svg> -->
-            </div> <!-- uzsidaro tevinis su gera klase, naudoti position apsolute ir taip ikelti ikona i search langa -->
-            <!-- jei klase nepriklausona nuo nav baro galiu deti bet koki pavadinima, jei ji bus tik nav bare, geriau susideti pagal jau esanciu klasiu logika -->
-          </ul>
-          <ul class="nav-bar__lists nav-bar__lists--right">
-              <li><a class="nav-bar__lists__link" href="#"></a></li>
-              <li><a class="nav-bar__lists__link" href="#">btn</a></li>
-              <li><a class="nav-bar__lists__link" href="#">btn</a></li>
-              <li><a class="nav-bar__lists__link" href="#">icon</a></li>
-          </ul>
-      </nav>
+          </a>
+          <div class="dropdown-menu" aria-labelledby="notifications">
+            <a class="dropdown-menu__item" href="#">Action</a>
+            <a class="dropdown-menu__item" href="#">Another action</a>
+            <a class="dropdown-menu__item" href="#">Something else here</a>
+          </div>
+        </li> -->
+  
+        <!-- End of second drop down link -->
+  
+        <li class="nav-bar__lists__link">
+  
+          <a href="#" role="button" id="profile" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+            <svg class="svg-logo">
+              <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#maps"></use>
+            </svg>
+          </a>
+          <div class="dropdown-menu" aria-labelledby="profile">
+            <h5 class="dropdown-menu__header" id="user-name">Welcome! John</h5>
+            <a class="dropdown-menu__item" href="#">
+            <div class="profile-box">
+              <svg class="svg-icon">
+                <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#maps"></use>
+              </svg>
+            </div>
+            <div class="dropdown-menu__item__title">
+              <p>Profile</p>
+            </div>
+            </a>
+            <a class="dropdown-menu__item" href="#">
+            <div class="profile-box">
+              <svg class="svg-icon">
+                <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#maps"></use>
+              </svg>
+            </div>
+            <div class="dropdown-menu__item__title">
+              <p>Settrings</p>
+            </div>
+            </a>
+            <a class="dropdown-menu__item" href="#">
+            <div class="profile-box">
+              <svg class="svg-icon">
+                <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#maps"></use>
+              </svg>
+            </div>
+            <div class="dropdown-menu__item__title">
+              <p>Lock Screen</p>
+            </div>
+            </a>
+            <a class="dropdown-menu__item" href="#">
+            <div class="profile-box">
+              <svg class="svg-icon">
+                <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#maps"></use>
+              </svg>
+            </div>
+            <div class="dropdown-menu__item__title">
+              <p>Logout</p>
+            </div>
+            </a>
+          </div>
+        </li>
+        <!-- END of thrid drop down -->
+  
+      </ul>
+    </nav>
   </div>
+  <div id="side-menu" class="side-menu">
+    <ul class="side-menu__lists">
+  
+      <li class="side-menu__lists__title">Main</li>
+      <li class="side-menu__lists__list active">
+        <a href="#">
+        <svg class="svg-icon">
+          <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#dashboard"></use>
+        </svg>
+        <span>Dashboard</span>
+      </a>
+    </li>
+    <li class="side-menu__lists__list">
+      <a href="#">
+      <svg class="svg-icon">
+        <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#ukit"></use>
+      </svg>
+      <span>UI kit</span>
+    </a>
+  </li>
+  <li class="side-menu__lists__list">
+    <a href="#">
+    <svg class="svg-icon">
+      <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#typography"></use>
+    </svg>
+    <span>Typography</span>
+  </a>
+  </li>
+  <li class="side-menu__lists__list">
+    <a href="#">
+    <svg class="svg-icon">
+      <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#components"></use>
+    </svg>
+    <span>Components</span>
+  </a>
+  </li>
+  <li class="side-menu__lists__list">
+    <a href="#">
+    <svg class="svg-icon">
+      <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#icons"></use>
+    </svg>
+    <span>Icons</span>
+  </a>
+  </li>
+  <li class="side-menu__lists__list">
+    <a href="#">
+    <svg class="svg-icon">
+      <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#forms"></use>
+    </svg>
+    <span>Forms</span>
+  </a>
+  </li>
+  
+  
+      <li class="side-menu__lists__title">More</li>
+      <li class="side-menu__lists__list">
+        <a href="#">
+        <svg class="svg-icon">
+          <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#tables"></use>
+        </svg>
+        <span>Tables</span>
+      </a>
+      </li>
+      <li class="side-menu__lists__list">
+        <a href="#">
+        <svg class="svg-icon">
+          <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#charts"></use>
+        </svg>
+        <span>Charts</span>
+      </a>
+      </li>
+      <li class="side-menu__lists__list">
+        <a href="#">
+        <svg class="svg-icon">
+          <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#maps"></use>
+        </svg>
+        <span>Maps</span>
+      </a>
+      </li>
+      <li class="side-menu__lists__list">
+        <a href="#">
+        <svg class="svg-icon">
+          <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#mail"></use>
+        </svg>
+        <span>Mail</span>
+      </a>
+      </li>
+  
+      <li class="side-menu__lists__title">Extras</li>
+      <li class="side-menu__lists__list">
+        <a href="#">
+        <svg class="svg-icon">
+          <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#pages"></use>
+        </svg>
+        <span>Pages</span>
+      </a>
+      </li>
+      <li class="side-menu__lists__list">
+        <a href="#">
+        <svg class="svg-icon">
+          <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#extras"></use>
+        </svg>
+        <span>Extras</span>
+      </a>
+      </li>
+      <li class="side-menu__lists__list">
+        <a href="#">
+        <svg class="svg-icon">
+          <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#multilvl"></use>
+        </svg>
+        <span>Multi Level</span>
+      </a>
+      </li>
+    </ul>
+  </div>
+  <div id="side-menu-right" class="side-menu side-menu--right side-menu--right--closed">
+    <ul class="nav nav-tabs" role="tablist">
+      <li class="nav-item">
+        <a class="nav-link active" id="activity-tab" data-toggle="tab" href="#activity" role="tab" aria-controls="activity" aria-selected="true">Activity</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" id="settings-tab" data-toggle="tab" href="#settings" role="tab" aria-controls="settings" aria-selected="false">Settings</a>
+      </li>
+    </ul>
+    <div class="tab-content" id="myTabContent">
+      <div class="tab-pane fade show active" id="activity" role="tabpanel" aria-labelledby="activity-tab">
+        <div class="side-menu__tab-activity">
+          <div class="side-menu__tab-activity__content">
+            <p>5 minutes ago</p>
+            <h5><a href="">John Doe</a> Uploaded foto</h5>
+            <h6>Lorem ipsum dolor sit amet, consectetur adipisicing quat. Duis aute
+              irure dolor in reprehenderit in non proident, sunt in culpa qui officia
+              deserunt mollit anim id est laborum.</h6>
+          </div>
+        </div>
+  
+        <div class="side-menu__tab-activity">
+          <div class="side-menu__tab-activity__content">
+            <p>5 minutes ago</p>
+            <h5><a href="">John Doe</a> Uploaded foto</h5>
+            <h6>Lorem ipsum dolor sit amet, consectetur adipisicing quat. Duis aute
+              irure dolor in reprehenderit in non proident, sunt in culpa qui officia
+              deserunt mollit anim id est laborum.</h6>
+          </div>
+        </div>
+  
+  
+        <div class="side-menu__tab-activity">
+          <div class="side-menu__tab-activity__content">
+            <p>5 minutes ago</p>
+            <h5><a href="">John Doe</a> Uploaded foto</h5>
+            <h6>Lorem ipsum dolor sit amet, consectetur adipisicing quat. Duis aute
+              irure dolor in reprehenderit in non proident, sunt in culpa qui officia
+              deserunt mollit anim id est laborum.</h6>
+          </div>
+        </div>
+      </div>
+  
+      <div class="tab-pane fade show active" id="settings" role="tabpanel" aria-labelledby="settings-tab">
+        <div class="side-menu__tab-settings">
+          <div class="side-menu__tab-settings__content">
+  
+            <div class="custom-control custom-switch">
+              <input type="checkbox" class="custom-control-input" id="customSwitch1">
+              <label class="custom-control-label" for="customSwitch1">Toggle this switch element</label>
+            </div>
+          </div>
+        </div>
+      </div>
+      </div>
+    </div>
 
   <div class="section-container">
-    <div class="container-fluid">
+    <div class="section-title">
+      <div class="container-fluid">
+        <div class="row">
+          <div class="col-sm-6">
+          <h4>Welcome!</h4>
+          </div>
+          <div class="col-sm-6 section-title__nav text-right">
+            <span><a href="/dashboard.html">Title</a></span>
+            <span><a href="" id="basename"></a></span>
+          
+    
+          </div>
+        </div>
+      </div>
+    </div>
+
+    
+
+<div class="container-fluid">
   <div class="row">
     <div class="col-lg-6 col-xl-3">
-      <div class="boxes">
+      <div class="boxes boxes--right">
         <div class="row">
           <div class="col-4">
             <div class="circle circle--success">
@@ -53,16 +372,16 @@
           </div>
           <div class="col-8 v-align">
             <h5>64,570</h5>
-            <p>Today's visits</p>
+            <p>Today&#x27;s Visits</p>
           </div>
         </div>
       </div>
     </div>
     <div class="col-lg-6 col-xl-3">
-      <div class="boxes">
+      <div class="boxes boxes--right">
         <div class="row">
           <div class="col-4">
-            <div class="circle circle--primary">
+            <div class="circle circle--border circle--primary">
               <svg class="svg-icon">
                 <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#components"></use>
               </svg>
@@ -70,16 +389,16 @@
           </div>
           <div class="col-8 v-align">
             <h5>64,570</h5>
-            <p>Today's visits</p>
+            <p>Total Revenue</p>
           </div>
         </div>
       </div>
     </div>
     <div class="col-lg-6 col-xl-3">
-      <div class="boxes">
+      <div class="boxes boxes--right">
         <div class="row">
           <div class="col-4">
-            <div class="circle circle--danger">
+            <div class="circle circle--border circle--danger">
               <svg class="svg-icon">
                 <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#components"></use>
               </svg>
@@ -87,16 +406,16 @@
           </div>
           <div class="col-8 v-align">
             <h5>64,570</h5>
-            <p>Today's visits</p>
+            <p>Today&#x27;s Sales</p>
           </div>
         </div>
       </div>
     </div>
     <div class="col-lg-6 col-xl-3">
-      <div class="boxes">
+      <div class="boxes boxes--right">
         <div class="row">
           <div class="col-4">
-            <div class="circle circle--secondary">
+            <div class="circle circle--border circle--secondary">
               <svg class="svg-icon">
                 <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#components"></use>
               </svg>
@@ -104,7 +423,7 @@
           </div>
           <div class="col-8 v-align">
             <h5>64,570</h5>
-            <p>Today's visits</p>
+            <p>Conversion</p>
           </div>
         </div>
       </div>
@@ -117,40 +436,24 @@
 
   <!-- Start of MID -->
   <div class="row">
-    <div class="col-lg-12 col-xl-4">
-      <div class="boxes boxes--txtleft">
-        <h6>YEARLY SALES REPORT</h6>
-        <div class="content">
-          <div class="circle circle--danger">
-            <svg class="svg-icon">
-              <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#components"></use>
-            </svg>
-          </div>
-        </div>
+    <div class="col-xl-4">
+      <div class="boxes">
+        <h6 class="boxes__title">Yearly Sales Report</h6>
+        <canvas id="myChart"></canvas>
+
       </div>
     </div>
-    <div class="col-lg-12 col-xl-4">
-      <div class="boxes boxes--txtleft">
-        <h6>YEARLY SALES REPORT</h6>
-        <div class="content">
-          <div class="circle circle--secondary">
-            <svg class="svg-icon">
-              <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#components"></use>
-            </svg>
-          </div>
-        </div>
+    <div class="col-xl-4">
+      <div class="boxes">
+        <h6 class="boxes__title">Yearly Revenue</h6>
+        <canvas id="myChart1"></canvas>
+
       </div>
     </div>
-    <div class="col-lg-12 col-xl-4">
-      <div class="boxes boxes--txtleft">
-        <h6>YEARLY SALES REPORT</h6>
-        <div class="content">
-          <div class="circle circle--primary">
-            <svg class="svg-icon">
-              <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#components"></use>
-            </svg>
-          </div>
-        </div>
+    <div class="col-xl-4">
+      <div class="boxes">
+        <h6 class="boxes__title">Total Revenue</h6>
+      <canvas id="myChart2"></canvas>
       </div>
     </div>
   </div>
@@ -159,307 +462,128 @@
 
   <div class="row">
     <div class="col-lg-12 col-xl-8">
-      <div class="boxes boxes--txtleft">
-        <h6>LATEST PROJECTS</h6>
-        <p>Your awesome text goes here.</p>
-        <div class="content">
-          <div class="circle circle--primary">
-            <svg class="svg-icon">
-              <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#components"></use>
-            </svg>
-          </div>
-        </div>
+      <div class="boxes">
+        <h6 class="boxes__title">Latests Projects</h6>
+        <p class="boxes__subheading">Owner of the project</p>
+        <!-- table responsive klase prideti -->
+        <table class="table table-borderless">
+    <thead>
+      <tr>
+        <th scope="col">#</th>
+        <th scope="col">Project Name</th>
+        <th scope="col">Start Date</th>
+        <th scope="col">Due Date</th>
+        <th scope="col">Status</th>
+        <th scope="col">Assign</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <th scope="row">1</th>
+        <td>Name</td>
+        <td>Name</td>
+        <td>Name</td>
+        <td>Name</td>
+        <td>Name</td>
+      </tr>
+      <tr>
+        <th scope="row">2</th>
+        <td>Jacob</td>
+        <td>Thornton</td>
+        <td>@fat</td>
+        <td>Otto</td>
+        <td>@mdo</td>
+      </tr>
+      <tr>
+        <th scope="row">3</th>
+        <td>Larry</td>
+        <td>the Bird</td>
+        <td>@twitter</td>
+        <td>Otto</td>
+        <td>@mdo</td>
+      </tr>
+      <tr>
+        <th scope="row">4</th>
+        <td>Jacob</td>
+        <td>Thornton</td>
+        <td>@fat</td>
+        <td>Otto</td>
+        <td>@mdo</td>
+      </tr>
+      <tr>
+        <tr>
+          <th scope="row">5</th>
+          <td>Jacob</td>
+          <td>Thornton</td>
+          <td>@fat</td>
+          <td>Otto</td>
+          <td>@mdo</td>
+        </tr>
+        <tr>
+    </tbody>
+  </table>
       </div>
     </div>
+
+    <!-- BOTOM SIDE  Start-->
+
     <div class="col-lg-12 col-xl-4">
       <div class="row">
 
-        <div class="col-lg-4 col-xl-12">
-          <div class="boxes">
-            <div class="users-list">
-              <div class="circle circle--danger circle--small">
-                <svg class="svg-icon">
-                  <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#components"></use>
-                </svg>
-              </div>
+        <div class="col-12">
+          <div class="boxes boxes--flex">
+            <img class="boxes__image" src="assets/images/potato.jpeg" alt="user picture"></img>
+            <div class="boxes__user-info v-align">
+              <h6>Tadas</h6>
+              <p>tadas@one.lt</p>
+              <p class="user-role user-role--admin">Admin</p>
             </div>
           </div>
         </div>
 
-
-      <div class="col-lg-4 col-xl-12">
-        <div class="boxes">
-          <div class="users-list">
-            <div class="circle circle--secondary circle--small">
-              <svg class="svg-icon">
-                <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#components"></use>
-              </svg>
+        <div class="col-12">
+          <div class="boxes boxes--flex">
+            <img class="boxes__image" src="assets/images/potato.jpeg" alt="user picture"></img>
+            <div class="boxes__user-info v-align">
+              <h6>Jonas</h6>
+              <p>jonas@one.lt</p>
+              <p class="user-role user-role--user">User</p>
             </div>
           </div>
         </div>
-      </div>
 
+        <div class="col-12">
+          <div class="boxes boxes--flex">
+            <img class="boxes__image" src="assets/images/potato.jpeg" alt="user picture"></img>
+            <div class="boxes__user-info v-align">
+              <h6>Stepas</h6>
+              <p>stepas@gmail.com</p>
 
-      <div class="col-lg-4 col-xl-12">
-        <div class="boxes">
-          <div class="users-list">
-            <div class="circle circle--primary circle--small">
-              <svg class="svg-icon">
-                <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#components"></use>
-              </svg>
+              <p class="user-role user-role--master">Master</p>
             </div>
           </div>
         </div>
+
       </div>
     </div>
   </div>
 </div>
-</div>
 
   </div>
-    <div class="side-menu">
-      <ul class="side-menu__lists">
-    
-        <li class="side-menu__lists__title">Main</li>
-        <li class="side-menu__lists__list active">
-          <a href="#">
-          <svg class="svg-icon">
-            <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#dashboard"></use>
-          </svg>
-          Dashboard
-        </a>
-      </li>
-      <li class="side-menu__lists__list">
-        <a href="#">
-        <svg class="svg-icon">
-          <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#ukit"></use>
-        </svg>
-        UI kit
-      </a>
-    </li>
-    <li class="side-menu__lists__list">
-      <a href="#">
-      <svg class="svg-icon">
-        <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#typography"></use>
-      </svg>
-      Typography
-    </a>
-    </li>
-    <li class="side-menu__lists__list">
-      <a href="#">
-      <svg class="svg-icon">
-        <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#components"></use>
-      </svg>
-      Components
-    </a>
-    </li>
-    <li class="side-menu__lists__list">
-      <a href="#">
-      <svg class="svg-icon">
-        <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#icons"></use>
-      </svg>
-      Icons
-    </a>
-    </li>
-    <li class="side-menu__lists__list">
-      <a href="#">
-      <svg class="svg-icon">
-        <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#forms"></use>
-      </svg>
-      Forms
-    </a>
-    </li>
-    
-    
-        <li class="side-menu__lists__title">More</li>
-        <li class="side-menu__lists__list">
-          <a href="#">
-          <svg class="svg-icon">
-            <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#tables"></use>
-          </svg>
-          Tables
-        </a>
-        </li>
-        <li class="side-menu__lists__list">
-          <a href="#">
-          <svg class="svg-icon">
-            <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#charts"></use>
-          </svg>
-          Charts
-        </a>
-        </li>
-        <li class="side-menu__lists__list">
-          <a href="#">
-          <svg class="svg-icon">
-            <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#maps"></use>
-          </svg>
-          Maps
-        </a>
-        </li>
-        <li class="side-menu__lists__list">
-          <a href="#">
-          <svg class="svg-icon">
-            <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#mail"></use>
-          </svg>
-          Mail
-        </a>
-        </li>
-    
-        <li class="side-menu__lists__title">Extras</li>
-        <li class="side-menu__lists__list">
-          <a href="#">
-          <svg class="svg-icon">
-            <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#pages"></use>
-          </svg>
-          Pages
-        </a>
-        </li>
-        <li class="side-menu__lists__list">
-          <a href="#">
-          <svg class="svg-icon">
-            <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#extras"></use>
-          </svg>
-          Extras
-        </a>
-        </li>
-        <li class="side-menu__lists__list">
-          <a href="#">
-          <svg class="svg-icon">
-            <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#multilvl"></use>
-          </svg>
-          Multi Level
-        </a>
-        </li>
-      </ul>
-    </div>
-    <!--
-    
-    
-    <div class="container-fluid">
-    
-      <div class="row row-nav">
-        <div class="col-md-6">Welcome!</div>
-        <div class="col-md-6">
-          <span class="float-right">
-          <a href="#" class="active">Minton</a>
-          <a> / </a>
-          <a href="#">Dashboard</a>
-        </span>
-      </div>
-    </div>
-    
-      <div class="row">
-    
-        <div class="col-md-3 col-top colboard d-flex align-items-center">
-    
-          <div class="col-md-6 justify-content-start">
-            <svg class="svg-icon">
-              <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#dashboard"></use>
-            </svg>
-          </div>
-          <div class="col-md-6 justify-content-end">
-            <h3 class="top-data">64,570</h3>
-            <p class="data-description">Today's Value</p>
-    
-          </div>
-        </div>
-        <div class="col-md-3 col-top colboard">Column</div>
-        <div class="col-md-3 col-top colboard">Column</div>
-        <div class="col-md-3 col-top colboard">Column</div>
-    
-      </div>
-    
-      <div class="row row-stats">
-        <div class="col-md-4 colboard"></div>
-        <div class="col-md-4 colboard"></div>
-        <div class="col-md-4 colboard"></div>
-      </div>
-    
-      <div class="row row-botom">
-      <div class="col-md-8 colboard"></div>
-      <div class="col-md-4 colboard">
-        <div class="row">
-          <div class="col-md-12 colboard"></div>
-          <div class="col-md-12 colboard"></div>
-          <div class="col-md-12 colboard"></div>
-        </div>
-      </div>
-    
-      </div>
-    
-    </div> -->
-    
-    <!-- <div class="container-fluid">
-      <div class="row">
-    
-        <div class="col-md-3">
-          <div class="row">
-          <div class="col-4">
-            <div class="circle">
-            <svg class="svg-icon">
-              <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#dashboard"></use>
-            </svg>
-          </div>
-        </div>
-    
-          <div class="col-8 justify-content-end">
-            <h5 class="top-data">64,570</h5>
-            <p class="data-description">Today's Value</p>
-    
-          </div>
-        </div>
-        </div>
-    
-        <div class="col-md-3">
-          <div class="row">
-          <div class="col-4">
-            <div class="circle">
-            <svg class="svg-icon">
-              <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#dashboard"></use>
-            </svg>
-          </div>
-        </div>
-          <div class="col-8 justify-content-end">
-            <h5 class="top-data">64,570</h5>
-            <p class="data-description">Today's Value</p>
-          </div>
-        </div>
-        </div>
-    
-        <div class="col-md-3">
-          <div class="row">
-          <div class="col-4">
-            <div class="circle">
-            <svg class="svg-icon">
-              <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#dashboard"></use>
-            </svg>
-          </div>
-        </div>
-          <div class="col-8 justify-content-end">
-            <h5 class="top-data">64,570</h5>
-            <p class="data-description">Today's Value</p>
-          </div>
-        </div>
-        </div>
-    
-        <div class="col-md-3">
-          <div class="row">
-          <div class="col-4">
-            <div class="circle">
-            <svg class="svg-icon">
-              <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#dashboard"></use>
-            </svg>
-          </div>
-        </div>
-          <div class="col-8 justify-content-end">
-            <h5 class="top-data">64,570</h5>
-            <p class="data-description">Today's Value</p>
-          </div>
-        </div>
-        </div>
-    </div>
-            
-    </div> -->
-    <div class="svg-sprite-container"><?xml version="1.0" encoding="utf-8"?><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"><symbol viewBox="0 0 24 24" id="charts" xmlns="http://www.w3.org/2000/svg"><path fill="none" d="M0 0h24v24H0V0z"/><path d="M19 3H5c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h14c1.1 0 2-.9 2-2V5c0-1.1-.9-2-2-2zm0 16H5V5h14v14zM7 10h2v7H7zm4-3h2v10h-2zm4 6h2v4h-2z"/></symbol><symbol viewBox="0 0 24 24" id="components" xmlns="http://www.w3.org/2000/svg"><path d="M0 0h24v24H0z" fill="none"/><path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm0 14.5c-2.49 0-4.5-2.01-4.5-4.5S9.51 7.5 12 7.5s4.5 2.01 4.5 4.5-2.01 4.5-4.5 4.5zm0-5.5c-.55 0-1 .45-1 1s.45 1 1 1 1-.45 1-1-.45-1-1-1z"/></symbol><symbol viewBox="0 0 24 24" id="dashboard" xmlns="http://www.w3.org/2000/svg"><path d="M0 0h24v24H0z" fill="none"/><path d="M12 2c1.1 0 2 .9 2 2s-.9 2-2 2-2-.9-2-2 .9-2 2-2zm9 7h-6v13h-2v-6h-2v6H9V9H3V7h18v2z"/></symbol><symbol viewBox="0 0 24 24" id="extras" xmlns="http://www.w3.org/2000/svg"><path fill="none" d="M0 0h24v24H0V0z"/><path d="M22 9.24l-7.19-.62L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21 12 17.27 18.18 21l-1.63-7.03L22 9.24zM12 15.4l-3.76 2.27 1-4.28-3.32-2.88 4.38-.38L12 6.1l1.71 4.04 4.38.38-3.32 2.88 1 4.28L12 15.4z"/></symbol><symbol viewBox="0 0 24 24" id="forms" xmlns="http://www.w3.org/2000/svg"><path d="M0 0h24v24H0z" fill="none"/><path d="M4 10v7h3v-7H4zm6 0v7h3v-7h-3zM2 22h19v-3H2v3zm14-12v7h3v-7h-3zm-4.5-9L2 6v2h19V6l-9.5-5z"/></symbol><symbol viewBox="0 0 24 24" id="icons" xmlns="http://www.w3.org/2000/svg"><defs><path id="fa" d="M0 0h24v24H0V0z"/></defs><defs><path id="fc" d="M0 0h24v24H0V0z"/></defs><clipPath id="fb"><use xlink:href="#fa" overflow="visible"/></clipPath><clipPath id="fd" clip-path="url(#fb)"><use xlink:href="#fc" overflow="visible"/></clipPath><path d="M6 22h12l-6-6zM21 3H3c-1.1 0-2 .9-2 2v12c0 1.1.9 2 2 2h4v-2H3V5h18v12h-4v2h4c1.1 0 2-.9 2-2V5c0-1.1-.9-2-2-2z" clip-path="url(#fd)"/></symbol><symbol viewBox="0 0 24 24" id="mail" xmlns="http://www.w3.org/2000/svg"><path fill="none" d="M0 0h24v24H0V0z"/><path d="M22 6c0-1.1-.9-2-2-2H4c-1.1 0-2 .9-2 2v12c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V6zm-2 0l-8 4.99L4 6h16zm0 12H4V8l8 5 8-5v10z"/></symbol><symbol viewBox="0 0 24 24" id="maps" xmlns="http://www.w3.org/2000/svg"><path fill="none" d="M0 0h24v24H0V0z"/><path d="M20.5 3l-.16.03L15 5.1 9 3 3.36 4.9c-.21.07-.36.25-.36.48V20.5c0 .28.22.5.5.5l.16-.03L9 18.9l6 2.1 5.64-1.9c.21-.07.36-.25.36-.48V3.5c0-.28-.22-.5-.5-.5zM10 5.47l4 1.4v11.66l-4-1.4V5.47zm-5 .99l3-1.01v11.7l-3 1.16V6.46zm14 11.08l-3 1.01V6.86l3-1.16v11.84z"/></symbol><symbol viewBox="0 0 24 24" id="menu" xmlns="http://www.w3.org/2000/svg"><path d="M0 0h24v24H0z" fill="none"/><path d="M3 18h18v-2H3v2zm0-5h18v-2H3v2zm0-7v2h18V6H3z"/></symbol><symbol viewBox="0 0 24 24" id="multilvl" xmlns="http://www.w3.org/2000/svg"><path fill="none" d="M0 0h24v24H0V0z"/><path d="M22 6.92l-1.41-1.41-2.85 3.21C15.68 6.4 12.83 5 9.61 5 6.72 5 4.07 6.16 2 8l1.42 1.42C5.12 7.93 7.27 7 9.61 7c2.74 0 5.09 1.26 6.77 3.24l-2.88 3.24-4-4L2 16.99l1.5 1.5 6-6.01 4 4 4.05-4.55c.75 1.35 1.25 2.9 1.44 4.55H21c-.22-2.3-.95-4.39-2.04-6.14L22 6.92z"/></symbol><symbol viewBox="0 0 24 24" id="pages" xmlns="http://www.w3.org/2000/svg"><path fill="none" d="M0 0h24v24H0V0z"/><path d="M19 3H5c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h14c1.1 0 2-.9 2-2V5c0-1.1-.9-2-2-2zm-6 2h6v6h-3l1-4-4 1V5zM5 5h6v3L7 7l1 4H5V5zm6 14H5v-6h3l-1 4 4-1v3zm8 0h-6v-3l4 1-1-4h3v6zm-4.37-4.37L12 13.72l-2.63.91.91-2.63-.91-2.63 2.63.91 2.63-.91-.91 2.63.91 2.63z"/></symbol><symbol viewBox="0 0 24 24" id="tables" xmlns="http://www.w3.org/2000/svg"><path fill="none" d="M0 0h24v24H0V0z"/><path d="M19 12h-2v3h-3v2h5v-5zM7 9h3V7H5v5h2V9zm14-6H3c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h18c1.1 0 2-.9 2-2V5c0-1.1-.9-2-2-2zm0 16.01H3V4.99h18v14.02z"/></symbol><symbol viewBox="0 0 24 24" id="typography" xmlns="http://www.w3.org/2000/svg"><path d="M0 0h24v24H0z" fill="none"/><path d="M20.94 11A8.994 8.994 0 0 0 13 3.06V1h-2v2.06A8.994 8.994 0 0 0 3.06 11H1v2h2.06A8.994 8.994 0 0 0 11 20.94V23h2v-2.06A8.994 8.994 0 0 0 20.94 13H23v-2h-2.06zM12 19c-3.87 0-7-3.13-7-7s3.13-7 7-7 7 3.13 7 7-3.13 7-7 7z"/></symbol><symbol viewBox="0 0 24 24" id="ukit" xmlns="http://www.w3.org/2000/svg"><path d="M17.81 4.47c-.08 0-.16-.02-.23-.06C15.66 3.42 14 3 12.01 3c-1.98 0-3.86.47-5.57 1.41-.24.13-.54.04-.68-.2a.506.506 0 0 1 .2-.68C7.82 2.52 9.86 2 12.01 2c2.13 0 3.99.47 6.03 1.52.25.13.34.43.21.67a.49.49 0 0 1-.44.28zM3.5 9.72a.499.499 0 0 1-.41-.79c.99-1.4 2.25-2.5 3.75-3.27C9.98 4.04 14 4.03 17.15 5.65c1.5.77 2.76 1.86 3.75 3.25a.5.5 0 0 1-.12.7c-.23.16-.54.11-.7-.12a9.388 9.388 0 0 0-3.39-2.94c-2.87-1.47-6.54-1.47-9.4.01-1.36.7-2.5 1.7-3.4 2.96-.08.14-.23.21-.39.21zm6.25 12.07a.47.47 0 0 1-.35-.15c-.87-.87-1.34-1.43-2.01-2.64-.69-1.23-1.05-2.73-1.05-4.34 0-2.97 2.54-5.39 5.66-5.39s5.66 2.42 5.66 5.39c0 .28-.22.5-.5.5s-.5-.22-.5-.5c0-2.42-2.09-4.39-4.66-4.39-2.57 0-4.66 1.97-4.66 4.39 0 1.44.32 2.77.93 3.85.64 1.15 1.08 1.64 1.85 2.42.19.2.19.51 0 .71-.11.1-.24.15-.37.15zm7.17-1.85c-1.19 0-2.24-.3-3.1-.89-1.49-1.01-2.38-2.65-2.38-4.39 0-.28.22-.5.5-.5s.5.22.5.5c0 1.41.72 2.74 1.94 3.56.71.48 1.54.71 2.54.71.24 0 .64-.03 1.04-.1.27-.05.53.13.58.41.05.27-.13.53-.41.58-.57.11-1.07.12-1.21.12zM14.91 22c-.04 0-.09-.01-.13-.02-1.59-.44-2.63-1.03-3.72-2.1a7.297 7.297 0 0 1-2.17-5.22c0-1.62 1.38-2.94 3.08-2.94 1.7 0 3.08 1.32 3.08 2.94 0 1.07.93 1.94 2.08 1.94s2.08-.87 2.08-1.94c0-3.77-3.25-6.83-7.25-6.83-2.84 0-5.44 1.58-6.61 4.03-.39.81-.59 1.76-.59 2.8 0 .78.07 2.01.67 3.61.1.26-.03.55-.29.64-.26.1-.55-.04-.64-.29a11.14 11.14 0 0 1-.73-3.96c0-1.2.23-2.29.68-3.24 1.33-2.79 4.28-4.6 7.51-4.6 4.55 0 8.25 3.51 8.25 7.83 0 1.62-1.38 2.94-3.08 2.94s-3.08-1.32-3.08-2.94c0-1.07-.93-1.94-2.08-1.94s-2.08.87-2.08 1.94c0 1.71.66 3.31 1.87 4.51.95.94 1.86 1.46 3.27 1.85.27.07.42.35.35.61-.05.23-.26.38-.47.38z"/><path fill="none" d="M0 0h24v24H0z"/></symbol></svg></div> <!-- kad veiktu svg sprite ir loudintu failus -->
+
+
+  <div class="svg-sprite-container"><?xml version="1.0" encoding="utf-8"?><!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd"><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"><symbol id="FBlogo" viewBox="0 0 1024 1024" xmlns="http://www.w3.org/2000/svg"><defs><style>.acls-1{fill:#898f9c}.acls-2{fill:#fff}</style></defs><path class="acls-1" d="M967.48 0h-911A56.51 56.51 0 0 0 0 56.52v911A56.51 56.51 0 0 0 56.52 1024H547V628H414V473h133V358.93c0-132.26 80.77-204.28 198.76-204.28 56.51 0 105.08 4.21 119.24 6.09V299h-81.37c-64.2 0-76.63 30.51-76.63 75.28V473h153.49l-20 155H707v396h260.48a56.51 56.51 0 0 0 56.52-56.52v-911A56.51 56.51 0 0 0 967.48 0z"/><path id="af" class="acls-2" d="M707 1024V628h133.5l20-155H707v-98.72c0-44.77 12.43-75.28 76.63-75.28H865V160.74c-14.16-1.88-62.73-6.09-119.24-6.09-118 0-198.76 72-198.76 204.28V473H414v155h133v396z"/></symbol><symbol viewBox="0 0 24 24" id="charts" xmlns="http://www.w3.org/2000/svg"><path fill="none" d="M0 0h24v24H0V0z"/><path d="M19 3H5c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h14c1.1 0 2-.9 2-2V5c0-1.1-.9-2-2-2zm0 16H5V5h14v14zM7 10h2v7H7zm4-3h2v10h-2zm4 6h2v4h-2z"/></symbol><symbol viewBox="0 0 24 24" id="components" xmlns="http://www.w3.org/2000/svg"><path d="M0 0h24v24H0z" fill="none"/><path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm0 14.5c-2.49 0-4.5-2.01-4.5-4.5S9.51 7.5 12 7.5s4.5 2.01 4.5 4.5-2.01 4.5-4.5 4.5zm0-5.5c-.55 0-1 .45-1 1s.45 1 1 1 1-.45 1-1-.45-1-1-1z"/></symbol><symbol viewBox="0 0 24 24" id="dashboard" xmlns="http://www.w3.org/2000/svg"><path d="M0 0h24v24H0z" fill="none"/><path d="M12 2c1.1 0 2 .9 2 2s-.9 2-2 2-2-.9-2-2 .9-2 2-2zm9 7h-6v13h-2v-6h-2v6H9V9H3V7h18v2z"/></symbol><symbol viewBox="0 0 24 24" id="extras" xmlns="http://www.w3.org/2000/svg"><path fill="none" d="M0 0h24v24H0V0z"/><path d="M22 9.24l-7.19-.62L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21 12 17.27 18.18 21l-1.63-7.03L22 9.24zM12 15.4l-3.76 2.27 1-4.28-3.32-2.88 4.38-.38L12 6.1l1.71 4.04 4.38.38-3.32 2.88 1 4.28L12 15.4z"/></symbol><symbol viewBox="0 0 96.124 96.123" id="facebook" xmlns="http://www.w3.org/2000/svg"><path d="M72.089.02L59.624 0C45.62 0 36.57 9.285 36.57 23.656v10.907H24.037a1.96 1.96 0 0 0-1.96 1.961v15.803a1.96 1.96 0 0 0 1.96 1.96H36.57v39.876a1.96 1.96 0 0 0 1.96 1.96h16.352a1.96 1.96 0 0 0 1.96-1.96V54.287h14.654a1.96 1.96 0 0 0 1.96-1.96l.006-15.803a1.963 1.963 0 0 0-1.961-1.961H56.842v-9.246c0-4.444 1.059-6.7 6.848-6.7l8.397-.003a1.96 1.96 0 0 0 1.959-1.96V1.98A1.96 1.96 0 0 0 72.089.02z"/></symbol><symbol viewBox="0 0 24 24" id="forms" xmlns="http://www.w3.org/2000/svg"><path d="M0 0h24v24H0z" fill="none"/><path d="M4 10v7h3v-7H4zm6 0v7h3v-7h-3zM2 22h19v-3H2v3zm14-12v7h3v-7h-3zm-4.5-9L2 6v2h19V6l-9.5-5z"/></symbol><symbol viewBox="0 0 24 24" id="icons" xmlns="http://www.w3.org/2000/svg"><defs><path id="ha" d="M0 0h24v24H0V0z"/></defs><defs><path id="hc" d="M0 0h24v24H0V0z"/></defs><clipPath id="hb"><use xlink:href="#ha" overflow="visible"/></clipPath><clipPath id="hd" clip-path="url(#hb)"><use xlink:href="#hc" overflow="visible"/></clipPath><path d="M6 22h12l-6-6zM21 3H3c-1.1 0-2 .9-2 2v12c0 1.1.9 2 2 2h4v-2H3V5h18v12h-4v2h4c1.1 0 2-.9 2-2V5c0-1.1-.9-2-2-2z" clip-path="url(#hd)"/></symbol><symbol viewBox="0 0 24 24" id="mail" xmlns="http://www.w3.org/2000/svg"><path fill="none" d="M0 0h24v24H0V0z"/><path d="M22 6c0-1.1-.9-2-2-2H4c-1.1 0-2 .9-2 2v12c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V6zm-2 0l-8 4.99L4 6h16zm0 12H4V8l8 5 8-5v10z"/></symbol><symbol viewBox="0 0 24 24" id="maps" xmlns="http://www.w3.org/2000/svg"><path fill="none" d="M0 0h24v24H0V0z"/><path d="M20.5 3l-.16.03L15 5.1 9 3 3.36 4.9c-.21.07-.36.25-.36.48V20.5c0 .28.22.5.5.5l.16-.03L9 18.9l6 2.1 5.64-1.9c.21-.07.36-.25.36-.48V3.5c0-.28-.22-.5-.5-.5zM10 5.47l4 1.4v11.66l-4-1.4V5.47zm-5 .99l3-1.01v11.7l-3 1.16V6.46zm14 11.08l-3 1.01V6.86l3-1.16v11.84z"/></symbol><symbol viewBox="0 0 24 24" id="menu" xmlns="http://www.w3.org/2000/svg"><path d="M0 0h24v24H0z" fill="none"/><path d="M3 18h18v-2H3v2zm0-5h18v-2H3v2zm0-7v2h18V6H3z"/></symbol><symbol viewBox="0 0 24 24" id="multilvl" xmlns="http://www.w3.org/2000/svg"><path fill="none" d="M0 0h24v24H0V0z"/><path d="M22 6.92l-1.41-1.41-2.85 3.21C15.68 6.4 12.83 5 9.61 5 6.72 5 4.07 6.16 2 8l1.42 1.42C5.12 7.93 7.27 7 9.61 7c2.74 0 5.09 1.26 6.77 3.24l-2.88 3.24-4-4L2 16.99l1.5 1.5 6-6.01 4 4 4.05-4.55c.75 1.35 1.25 2.9 1.44 4.55H21c-.22-2.3-.95-4.39-2.04-6.14L22 6.92z"/></symbol><symbol viewBox="0 0 24 24" id="pages" xmlns="http://www.w3.org/2000/svg"><path fill="none" d="M0 0h24v24H0V0z"/><path d="M19 3H5c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h14c1.1 0 2-.9 2-2V5c0-1.1-.9-2-2-2zm-6 2h6v6h-3l1-4-4 1V5zM5 5h6v3L7 7l1 4H5V5zm6 14H5v-6h3l-1 4 4-1v3zm8 0h-6v-3l4 1-1-4h3v6zm-4.37-4.37L12 13.72l-2.63.91.91-2.63-.91-2.63 2.63.91 2.63-.91-.91 2.63.91 2.63z"/></symbol><symbol viewBox="0 0 24 24" id="tables" xmlns="http://www.w3.org/2000/svg"><path fill="none" d="M0 0h24v24H0V0z"/><path d="M19 12h-2v3h-3v2h5v-5zM7 9h3V7H5v5h2V9zm14-6H3c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h18c1.1 0 2-.9 2-2V5c0-1.1-.9-2-2-2zm0 16.01H3V4.99h18v14.02z"/></symbol><symbol viewBox="0 0 24 24" id="typography" xmlns="http://www.w3.org/2000/svg"><path d="M0 0h24v24H0z" fill="none"/><path d="M20.94 11A8.994 8.994 0 0 0 13 3.06V1h-2v2.06A8.994 8.994 0 0 0 3.06 11H1v2h2.06A8.994 8.994 0 0 0 11 20.94V23h2v-2.06A8.994 8.994 0 0 0 20.94 13H23v-2h-2.06zM12 19c-3.87 0-7-3.13-7-7s3.13-7 7-7 7 3.13 7 7-3.13 7-7 7z"/></symbol><symbol viewBox="0 0 24 24" id="ukit" xmlns="http://www.w3.org/2000/svg"><path d="M17.81 4.47c-.08 0-.16-.02-.23-.06C15.66 3.42 14 3 12.01 3c-1.98 0-3.86.47-5.57 1.41-.24.13-.54.04-.68-.2a.506.506 0 0 1 .2-.68C7.82 2.52 9.86 2 12.01 2c2.13 0 3.99.47 6.03 1.52.25.13.34.43.21.67a.49.49 0 0 1-.44.28zM3.5 9.72a.499.499 0 0 1-.41-.79c.99-1.4 2.25-2.5 3.75-3.27C9.98 4.04 14 4.03 17.15 5.65c1.5.77 2.76 1.86 3.75 3.25a.5.5 0 0 1-.12.7c-.23.16-.54.11-.7-.12a9.388 9.388 0 0 0-3.39-2.94c-2.87-1.47-6.54-1.47-9.4.01-1.36.7-2.5 1.7-3.4 2.96-.08.14-.23.21-.39.21zm6.25 12.07a.47.47 0 0 1-.35-.15c-.87-.87-1.34-1.43-2.01-2.64-.69-1.23-1.05-2.73-1.05-4.34 0-2.97 2.54-5.39 5.66-5.39s5.66 2.42 5.66 5.39c0 .28-.22.5-.5.5s-.5-.22-.5-.5c0-2.42-2.09-4.39-4.66-4.39-2.57 0-4.66 1.97-4.66 4.39 0 1.44.32 2.77.93 3.85.64 1.15 1.08 1.64 1.85 2.42.19.2.19.51 0 .71-.11.1-.24.15-.37.15zm7.17-1.85c-1.19 0-2.24-.3-3.1-.89-1.49-1.01-2.38-2.65-2.38-4.39 0-.28.22-.5.5-.5s.5.22.5.5c0 1.41.72 2.74 1.94 3.56.71.48 1.54.71 2.54.71.24 0 .64-.03 1.04-.1.27-.05.53.13.58.41.05.27-.13.53-.41.58-.57.11-1.07.12-1.21.12zM14.91 22c-.04 0-.09-.01-.13-.02-1.59-.44-2.63-1.03-3.72-2.1a7.297 7.297 0 0 1-2.17-5.22c0-1.62 1.38-2.94 3.08-2.94 1.7 0 3.08 1.32 3.08 2.94 0 1.07.93 1.94 2.08 1.94s2.08-.87 2.08-1.94c0-3.77-3.25-6.83-7.25-6.83-2.84 0-5.44 1.58-6.61 4.03-.39.81-.59 1.76-.59 2.8 0 .78.07 2.01.67 3.61.1.26-.03.55-.29.64-.26.1-.55-.04-.64-.29a11.14 11.14 0 0 1-.73-3.96c0-1.2.23-2.29.68-3.24 1.33-2.79 4.28-4.6 7.51-4.6 4.55 0 8.25 3.51 8.25 7.83 0 1.62-1.38 2.94-3.08 2.94s-3.08-1.32-3.08-2.94c0-1.07-.93-1.94-2.08-1.94s-2.08.87-2.08 1.94c0 1.71.66 3.31 1.87 4.51.95.94 1.86 1.46 3.27 1.85.27.07.42.35.35.61-.05.23-.26.38-.47.38z"/><path fill="none" d="M0 0h24v24H0z"/></symbol></svg></div>
+  <!-- kad veiktu svg sprite ir loadintu failus -->
+      <script type="text/javascript" src="../node_modules/chart.js/dist/Chart.min.js"></script>
+
+
+  <script type="text/jscript" src="assets/js/charts.js"></script>
+  <script src="http://code.jquery.com/jquery-3.3.1.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+  <script type="text/jscript" src="assets/js/bootstrap.min.js"></script>
+   <script type="text/javascript" src="assets/js/app.js"></script>
+
+
 </body>
+
 </html>

@@ -1,0 +1,42 @@
+---
+layout: login.hbs
+---
+
+<div class="container-fluid perfect-center">
+  <div class="row">
+    <div class="col-4 offset-4">
+      <div class="login">
+        <div class="login__title">
+          <svg class="svg-log">
+            <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#maps"></use>
+          </svg>
+        </div>
+          <div class="login__form">
+            <form class="login-form" action="dashboard.html" name="login-form">
+              <div class="login__form__item">
+              <input type="email" name="email" value="" required="required">
+              <label class="label-inside" for="email">Username or email</label>
+            </div>
+
+            <div class="login__form__item">
+            <input type="password" name="password" value="" required="required">
+            <label class="label-inside" for="password">Password</label>
+          </div>
+          <div class="login__form__item login__form__item--checkbox">
+            <div class="checkbox">
+              <input type="checkbox" name="remember" id="remember" value="">
+              <label for="remember">Remember me</label>
+            </div>
+
+        </div>
+            <div class="login__form__item">
+              <button type="button" name="button" class="button button--full-width">Log in</button>
+            </div>
+            </form>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </div>
+</div>

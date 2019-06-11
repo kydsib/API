@@ -1,31 +1,155 @@
 <div class="topbar">
-    <nav class="nav-bar nav-bar--left">
-        <ul class="nav-bar__lists">
-            <li>
-              <svg class="svg-logo">
+  <nav class="nav-bar nav-bar--left">
+    <ul class="nav-bar__lists">
+      <li class="nav-bar__lists__link">
+        <a class="" href="#">
+        <svg class="svg-icon">
+          <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#maps"></use>
+        </svg>
+
+        <span>Title</span>
+      </a>
+      </li>
+    </ul>
+  </nav>
+  <nav class="nav-bar nav-bar--right">
+    <ul class="nav-bar__lists nav-bar__lists--left">
+
+      <li class="nav-bar__lists__link">
+        <a href="#" id="burger">
+          <svg class="svg-logo">
+            <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#maps"></use>
+          </svg>
+      </a>
+    </li>
+    </ul>
+
+    <!-- right side nav menu and drop downs -->
+    <ul class="nav-bar__lists nav-bar__lists--right">
+      <!-- start of first drop down -->
+
+      <li class="nav-bar__lists__link">
+        <a href="#" role="button" id="notifications" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+          <svg class="svg-logo">
+            <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#maps"></use>
+          </svg>
+        </a>
+      </li>
+
+      <li class="nav-bar__lists__link">
+        <a href="#" role="button" id="activities" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+          <svg class="svg-logo">
+            <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#maps"></use>
+          </svg>
+        </a>
+        <div class="dropdown-menu" aria-labelledby="activities">
+          <a class="dropdown-menu__item" href="#">
+            <div class="circle circle--danger">
+              <svg class="svg-icon">
                 <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#maps"></use>
               </svg>
-              <a class="nav-bar__lists__link nav-bar__list__link--logo" href="#">ADMIN</a>
-            </li>
-        </ul>
-    </nav>
-    <nav class="nav-bar nav-bar--right">
-        <ul class="nav-bar__lists nav-bar__lists--left">
-          <svg class="nav-bar__lists nav-bar__lists--svg-icon">
-            <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#Ukit"></use>
+            </div>
+            <div class="dropdown-menu__item__title">
+              <h5>Robert</h5>
+              <p class="">1min</p>
+            </div>
+          </a>
+          <a class="dropdown-menu__item" href="#">
+            <div class="circle circle--success">
+              <svg class="svg-icon">
+                <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#maps"></use>
+              </svg>
+            </div>
+            <div class="dropdown-menu__item__title">
+              <h5>Robert</h5>
+              <p class="">1min</p>
+            </div>
+          </a>
+          <a class="dropdown-menu__item" href="#">
+            <div class="circle circle--secondary">
+              <svg class="svg-icon">
+                <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#maps"></use>
+              </svg>
+            </div>
+            <div class="dropdown-menu__item__title">
+              <h5>Robert</h5>
+              <p class="">1min</p>
+            </div>
+          </a>
+        </div>
+      </li>
+
+      <!-- end of first drop down -->
+
+      <!-- start of second drop down -->
+      <!-- <li class="nav-bar__lists__link">
+        <a href="#" role="button" id="notifications" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+          <svg class="svg-logo">
+            <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#maps"></use>
           </svg>
-            <li><a class="nav-bar__lists__link" href="#"></a>BURGER</li>
-            <div class="tevinis su gera klase">
-            <input class="nav-bar__lists__search" type="text" placeholder="Search.." name="search"></input>
-              <!-- <svg class="cia eis looking glas svg dalykai"></svg> -->
-          </div> <!-- uzsidaro tevinis su gera klase, naudoti position apsolute ir taip ikelti ikona i search langa -->
-          <!-- jei klase nepriklausona nuo nav baro galiu deti bet koki pavadinima, jei ji bus tik nav bare, geriau susideti pagal jau esanciu klasiu logika -->
-        </ul>
-        <ul class="nav-bar__lists nav-bar__lists--right">
-            <li><a class="nav-bar__lists__link" href="#"></a></li>
-            <li><a class="nav-bar__lists__link" href="#">btn</a></li>
-            <li><a class="nav-bar__lists__link" href="#">btn</a></li>
-            <li><a class="nav-bar__lists__link" href="#">icon</a></li>
-        </ul>
-    </nav>
+        </a>
+        <div class="dropdown-menu" aria-labelledby="notifications">
+          <a class="dropdown-menu__item" href="#">Action</a>
+          <a class="dropdown-menu__item" href="#">Another action</a>
+          <a class="dropdown-menu__item" href="#">Something else here</a>
+        </div>
+      </li> -->
+
+      <!-- End of second drop down link -->
+
+      <li class="nav-bar__lists__link">
+
+        <a href="#" role="button" id="profile" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+          <svg class="svg-logo">
+            <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#maps"></use>
+          </svg>
+        </a>
+        <div class="dropdown-menu" aria-labelledby="profile">
+          <h5 class="dropdown-menu__header" id="user-name">Welcome! John</h5>
+          <a class="dropdown-menu__item" href="#">
+          <div class="profile-box">
+            <svg class="svg-icon">
+              <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#maps"></use>
+            </svg>
+          </div>
+          <div class="dropdown-menu__item__title">
+            <p>Profile</p>
+          </div>
+          </a>
+          <a class="dropdown-menu__item" href="#">
+          <div class="profile-box">
+            <svg class="svg-icon">
+              <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#maps"></use>
+            </svg>
+          </div>
+          <div class="dropdown-menu__item__title">
+            <p>Settrings</p>
+          </div>
+          </a>
+          <a class="dropdown-menu__item" href="#">
+          <div class="profile-box">
+            <svg class="svg-icon">
+              <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#maps"></use>
+            </svg>
+          </div>
+          <div class="dropdown-menu__item__title">
+            <p>Lock Screen</p>
+          </div>
+          </a>
+          <a class="dropdown-menu__item" href="#">
+          <div class="profile-box">
+            <svg class="svg-icon">
+              <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#maps"></use>
+            </svg>
+          </div>
+          <div class="dropdown-menu__item__title">
+            <p>Logout</p>
+          </div>
+          </a>
+        </div>
+      </li>
+      <!-- END of thrid drop down -->
+
+    </ul>
+  </nav>
 </div>

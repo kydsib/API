@@ -1,21 +1,51 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
-  <title></title>
   <link rel="stylesheet" href="assets/css/app.css">
+
+  <title></title>
+
+  {{#is default.lang 'lt'}}
+    <link rel="stylesheet" href="../assets/css/app.css">
+    {{else}}
+      <link rel="stylesheet" href="../assets/css/app.css">
+  {{/is}}
+
 </head>
-<body>
+
+<body class="bg-color-gray">
   {{>navbar}}
+  {{>sidenav}}
+  {{>sidenav-right}}
 
   <div class="section-container">
+    {{>title}}
+
     {{body}}
   </div>
-    {{>sidebar}}
-    {{>main}}
-    {{#is basename 'index'}}
+
+
+  {{#is basename 'index'}}
     {{>footer}}
-    {{/is}}
-    <div class="svg-sprite-container">{{> 'sprite.symbol' }}</div> <!-- kad veiktu svg sprite ir loudintu failus -->
+  {{/is}}
+  <div class="svg-sprite-container">{{> 'sprite.symbol' }}</div>
+  <!-- kad veiktu svg sprite ir loadintu failus -->
+  {{#is default.lang 'lt'}}
+    <script type="text/javascript" src="../../node_modules/chart.js/dist/Chart.min.js"></script>
+    {{else}}
+      <script type="text/javascript" src="../node_modules/chart.js/dist/Chart.min.js"></script>
+  {{/is}}
+
+
+  <script type="text/jscript" src="assets/js/charts.js"></script>
+  <script src="http://code.jquery.com/jquery-3.3.1.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+  <script type="text/jscript" src="assets/js/bootstrap.min.js"></script>
+   <script type="text/javascript" src="assets/js/app.js"></script>
+
+
 </body>
+
 </html>

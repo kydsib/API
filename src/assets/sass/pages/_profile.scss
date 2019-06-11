@@ -1,0 +1,105 @@
+$text-gray: rgb(197, 197, 197);
+$box-magin-bottom: 20px;
+$spacer: 10px;
+
+
+.user-info__top{
+  text-align: center;
+  margin-bottom: $box-magin-bottom;
+  .foto{
+    margin-top: 12px;
+    .boxes__image--size-big{
+      height: 130px;
+      width: 130px;
+    }
+    &__round{
+      padding: 5px;
+      border: 1px solid rgb(197, 197, 197);
+    }
+  }
+  .name-block{
+    margin: 10px 0px 20px 0px;
+    line-height: 1.8;
+    &__font-big{
+      font-size: 18px;
+      font-weight: 600;
+
+    }
+    &__font-small{
+      font-size: 14px;
+      color: $text-gray;
+    }
+  }
+}
+
+.user-info__contacts{
+  margin-bottom: $box-magin-bottom;
+  .bolded{
+    font-size: 12px;
+    font-weight: 800;
+    color: $text-gray;
+  }
+  .text-gray{
+    color: $text-gray;
+    font-size: 12px;
+  }
+}
+
+
+.user-info__bottom{
+  margin-bottom: $box-magin-bottom;
+  .circle{
+    @include circle();
+    height: 40px;
+    width: 40px;
+    margin-right: $spacer;
+
+    background: gray;
+    .svg-icon{
+
+      &--color{
+        fill: #5a5757;
+        padding: 6px;
+      }
+    }
+  }
+}
+
+
+.form-control {
+    border: 0;
+    border-bottom: 1px solid gray;
+    border-radius: 0px;
+    padding-left: 0px;
+}
+
+  .nav-tabs{
+    border: 0;
+    border-radius: 0;
+    border-bottom: 2px solid gray;
+    margin-bottom: $spacer;
+    .nav-item{
+      margin-bottom: -2px;
+      .nav-link{
+        padding: 16px 14px;
+        &.active{
+
+          border: 0px;
+          border-color: none;
+          border-bottom: 2px solid blue;
+        }
+      }
+    }
+  }
+
+  .form-group{
+    &--bottom{
+      margin-bottom: 5 * $spacer;
+      padding-right: 2 * $spacer;
+    }
+  }
+
+  .btn-bottom{
+    padding-top: 1.5 * $spacer;
+    border-top: 1px solid gray;
+  }

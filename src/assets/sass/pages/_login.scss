@@ -1,0 +1,31 @@
+.login{
+  background-color: $background-color;
+
+  &__title{
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  svg-log{
+    max-width: 100%;
+    display: block;
+    height: 30px;
+  }
+  }
+  &__form{
+    &__item{
+      position: relative;
+      margin-bottom: 20px;
+      @include default-input();
+      &--checkbox{
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        margin-top: 20px;
+
+      }
+    }
+  }
+}

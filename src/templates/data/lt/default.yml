@@ -1,0 +1,18 @@
+lang: lt
+sidenav:
+  main: Pagrindinis
+  dashboard: Valdymo skydelis
+  ui-kit: Vart. nustatymai
+  typography: Aprašymas
+  components: Komponentai
+  icons: Ikonos
+  forms: Formos
+  more: Daugiau
+  tables: Lentelės
+  charts: Ataskaitos
+  maps: Žemėlapiai
+  mail: Paštas
+  extras: Papildoma
+  pages: Puslapiai
+  additional: Kiti pasirinkimai
+  multi-level: Papildomi lygiai

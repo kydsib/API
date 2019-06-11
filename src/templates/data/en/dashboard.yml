@@ -1,0 +1,21 @@
+stats:
+  visits: Today's Visits
+  revenue: Total Revenue
+  sales: Today's Sales
+  conversion: Conversion
+graphs:
+  yearly: Yearly Sales Report
+  yearly-revenue: Yearly Revenue
+  total-revenue: Total Revenue
+projects:
+  latest-projects: Latests Projects
+  who-owns-it: Owner of the project
+  project-name: Project Name
+  start-date: Start Date
+  due-date: Due Date
+  status: Status
+  assign: Assign
+members:
+  admin: Admin 
+  user: User
+  master: Master

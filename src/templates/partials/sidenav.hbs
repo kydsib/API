@@ -1,21 +1,21 @@
-<div class="side-menu">
+<div id="side-menu" class="side-menu">
   <ul class="side-menu__lists">
 
-    <li class="side-menu__lists__title">Main</li>
-    <li class="side-menu__lists__list{{#is basename 'dashboard'}} active{{/is}}">
+    <li class="side-menu__lists__title">{{default.sidenav.main}}</li>
+    <li class="side-menu__lists__list{{#is custom_basename 'dashboard'}} active{{/is}}">
       <a href="#">
       <svg class="svg-icon">
         <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#dashboard"></use>
       </svg>
-      Dashboard
+      <span>{{default.sidenav.dashboard}}</span>
     </a>
   </li>
-  <li class="side-menu__lists__list{{#is basename 'UI kit'}} active{{/is}}">
+  <li class="side-menu__lists__list">
     <a href="#">
     <svg class="svg-icon">
       <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#ukit"></use>
     </svg>
-    UI kit
+    <span>{{default.sidenav.ui-kit}}</span>
   </a>
 </li>
 <li class="side-menu__lists__list">
@@ -23,7 +23,7 @@
   <svg class="svg-icon">
     <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#typography"></use>
   </svg>
-  Typography
+  <span>{{default.sidenav.typography}}</span>
 </a>
 </li>
 <li class="side-menu__lists__list">
@@ -31,7 +31,7 @@
   <svg class="svg-icon">
     <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#components"></use>
   </svg>
-  Components
+  <span>{{default.sidenav.components}}</span>
 </a>
 </li>
 <li class="side-menu__lists__list">
@@ -39,7 +39,7 @@
   <svg class="svg-icon">
     <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#icons"></use>
   </svg>
-  Icons
+  <span>{{default.sidenav.icons}}</span>
 </a>
 </li>
 <li class="side-menu__lists__list">
@@ -47,18 +47,18 @@
   <svg class="svg-icon">
     <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#forms"></use>
   </svg>
-  Forms
+  <span>{{default.sidenav.forms}}</span>
 </a>
 </li>
 
 
-    <li class="side-menu__lists__title">More</li>
+    <li class="side-menu__lists__title">{{default.sidenav.more}}</li>
     <li class="side-menu__lists__list">
       <a href="#">
       <svg class="svg-icon">
         <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#tables"></use>
       </svg>
-      Tables
+      <span>{{default.sidenav.tables}}</span>
     </a>
     </li>
     <li class="side-menu__lists__list">
@@ -66,7 +66,7 @@
       <svg class="svg-icon">
         <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#charts"></use>
       </svg>
-      Charts
+      <span>{{default.sidenav.charts}}</span>
     </a>
     </li>
     <li class="side-menu__lists__list">
@@ -74,7 +74,7 @@
       <svg class="svg-icon">
         <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#maps"></use>
       </svg>
-      Maps
+      <span>{{default.sidenav.maps}}</span>
     </a>
     </li>
     <li class="side-menu__lists__list">
@@ -82,17 +82,17 @@
       <svg class="svg-icon">
         <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#mail"></use>
       </svg>
-      Mail
+      <span>{{default.sidenav.mail}}</span>
     </a>
     </li>
 
-    <li class="side-menu__lists__title">Extras</li>
+    <li class="side-menu__lists__title">{{default.sidenav.extras}}</li>
     <li class="side-menu__lists__list">
       <a href="#">
       <svg class="svg-icon">
         <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#pages"></use>
       </svg>
-      Pages
+      <span>{{default.sidenav.pages}}</span>
     </a>
     </li>
     <li class="side-menu__lists__list">
@@ -100,7 +100,7 @@
       <svg class="svg-icon">
         <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#extras"></use>
       </svg>
-      Extras
+      <span>{{default.sidenav.additional}}</span>
     </a>
     </li>
     <li class="side-menu__lists__list">
@@ -108,7 +108,7 @@
       <svg class="svg-icon">
         <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#multilvl"></use>
       </svg>
-      Multi Level
+      <span>{{default.sidenav.multi-level}}</span>
     </a>
     </li>
   </ul>

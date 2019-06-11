@@ -1,0 +1,213 @@
+---
+custom_basename: dashboard
+---
+
+<div class="container-fluid">
+  <div class="row">
+    <div class="col-lg-6 col-xl-3">
+      <div class="boxes boxes--right">
+        <div class="row">
+          <div class="col-4">
+            <div class="circle circle--success">
+              <svg class="svg-icon">
+                <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#components"></use>
+              </svg>
+            </div>
+          </div>
+          <div class="col-8 v-align">
+            <h5>64,570</h5>
+            <p>{{dashboard.stats.visits}}</p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="col-lg-6 col-xl-3">
+      <div class="boxes boxes--right">
+        <div class="row">
+          <div class="col-4">
+            <div class="circle circle--border circle--primary">
+              <svg class="svg-icon">
+                <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#components"></use>
+              </svg>
+            </div>
+          </div>
+          <div class="col-8 v-align">
+            <h5>64,570</h5>
+            <p>{{dashboard.stats.revenue}}</p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="col-lg-6 col-xl-3">
+      <div class="boxes boxes--right">
+        <div class="row">
+          <div class="col-4">
+            <div class="circle circle--border circle--danger">
+              <svg class="svg-icon">
+                <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#components"></use>
+              </svg>
+            </div>
+          </div>
+          <div class="col-8 v-align">
+            <h5>64,570</h5>
+            <p>{{dashboard.stats.sales}}</p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="col-lg-6 col-xl-3">
+      <div class="boxes boxes--right">
+        <div class="row">
+          <div class="col-4">
+            <div class="circle circle--border circle--secondary">
+              <svg class="svg-icon">
+                <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#components"></use>
+              </svg>
+            </div>
+          </div>
+          <div class="col-8 v-align">
+            <h5>64,570</h5>
+            <p>{{dashboard.stats.conversion}}</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+
+  <!-- END OF TOP -->
+
+  <!-- Start of MID -->
+  <div class="row">
+    <div class="col-xl-4">
+      <div class="boxes">
+        <h6 class="boxes__title">{{dashboard.graphs.yearly}}</h6>
+        <canvas id="myChart"></canvas>
+
+      </div>
+    </div>
+    <div class="col-xl-4">
+      <div class="boxes">
+        <h6 class="boxes__title">{{dashboard.graphs.yearly-revenue}}</h6>
+        <canvas id="myChart1"></canvas>
+
+      </div>
+    </div>
+    <div class="col-xl-4">
+      <div class="boxes">
+        <h6 class="boxes__title">{{dashboard.graphs.total-revenue}}</h6>
+      <canvas id="myChart2"></canvas>
+      </div>
+    </div>
+  </div>
+
+  <!-- END MID -->
+
+  <div class="row">
+    <div class="col-lg-12 col-xl-8">
+      <div class="boxes">
+        <h6 class="boxes__title">{{dashboard.projects.latest-projects}}</h6>
+        <p class="boxes__subheading">{{dashboard.projects.who-owns-it}}</p>
+        <table class="table table-borderless">
+    <thead>
+      <tr>
+        <th scope="col">#</th>
+        <th scope="col">{{dashboard.projects.project-name}}</th>
+        <th scope="col">{{dashboard.projects.start-date}}</th>
+        <th scope="col">{{dashboard.projects.due-date}}</th>
+        <th scope="col">{{dashboard.projects.status}}</th>
+        <th scope="col">{{dashboard.projects.assign}}</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <th scope="row">1</th>
+        <td>Name</td>
+        <td>Name</td>
+        <td>Name</td>
+        <td>Name</td>
+        <td>Name</td>
+      </tr>
+      <tr>
+        <th scope="row">2</th>
+        <td>Jacob</td>
+        <td>Thornton</td>
+        <td>@fat</td>
+        <td>Otto</td>
+        <td>@mdo</td>
+      </tr>
+      <tr>
+        <th scope="row">3</th>
+        <td>Larry</td>
+        <td>the Bird</td>
+        <td>@twitter</td>
+        <td>Otto</td>
+        <td>@mdo</td>
+      </tr>
+      <tr>
+        <th scope="row">4</th>
+        <td>Jacob</td>
+        <td>Thornton</td>
+        <td>@fat</td>
+        <td>Otto</td>
+        <td>@mdo</td>
+      </tr>
+      <tr>
+        <tr>
+          <th scope="row">5</th>
+          <td>Jacob</td>
+          <td>Thornton</td>
+          <td>@fat</td>
+          <td>Otto</td>
+          <td>@mdo</td>
+        </tr>
+        <tr>
+    </tbody>
+  </table>
+      </div>
+    </div>
+
+    <!-- BOTOM SIDE  Start-->
+
+    <div class="col-lg-12 col-xl-4">
+      <div class="row">
+
+        <div class="col-12">
+          <div class="boxes boxes--flex">
+            <img class="boxes__image" src="../assets/images/potato.jpeg" alt="user picture"></img>
+            <div class="boxes__user-info v-align">
+              <h6>Tadas</h6>
+              <p>tadas@one.lt</p>
+              <p class="user-role user-role--admin">{{dashboard.members.admin}}</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-12">
+          <div class="boxes boxes--flex">
+            <img class="boxes__image" src="../assets/images/potato.jpeg" alt="user picture"></img>
+            <div class="boxes__user-info v-align">
+              <h6>Jonas</h6>
+              <p>jonas@one.lt</p>
+              <p class="user-role user-role--user">{{dashboard.members.user}}</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-12">
+          <div class="boxes boxes--flex">
+            <img class="boxes__image" src="../assets/images/potato.jpeg" alt="user picture"></img>
+            <div class="boxes__user-info v-align">
+              <h6>Stepas</h6>
+              <p>stepas@gmail.com</p>
+
+              <p class="user-role user-role--master">{{dashboard.members.master}}</p>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </div>
+</div>

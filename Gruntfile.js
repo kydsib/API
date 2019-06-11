@@ -37,22 +37,29 @@ module.exports = function(grunt) {
         },
         en: {
             options: {
-                data: ['src/templates/data/en/*.yml', 'src/templates/data/*.yml']
+                data: ['src/templates/data/en/*.yml']
             },
             src: ['src/templates/pages/en/*.hbs'],
             dest: './web'
         },
+        lt:{
+          options:{
+            data: ['src/templates/data/lt/*.yml']
+          },
+          src: ['src/templates/pages/lt/*.hbs'],
+          dest: './web/lt/'
+        }
     },
     watch: {
         options: {
         },
         dev: {
             files: ['src/assets/sass/**/*.scss', 'src/templates/**/*.hbs'],
-            tasks: ['compass:dev', 'assemble:en']
+            tasks: ['compass:dev', 'assemble:site']
         },
         handlebars: {
             files: ['src/templates/*/*.hbs', 'src/templates/layouts/*.hbs' ],
-            tasks: ['assemble:en']
+            tasks: ['assemble:site']
         }
     },
     svg_sprite: {
@@ -75,7 +82,10 @@ module.exports = function(grunt) {
                '../../../../web/assets/images/ic_multilvl_24px.svg',
                '../../../../web/assets/images/ic_sq-top_24px.svg',
                '../../../../web/assets/images/ic_dot-top_24px.svg',
-               '../../../../web/assets/images/ic_bell-top_24px.svg'
+               '../../../../web/assets/images/ic_bell-top_24px.svg',
+               '../../../../web/assets/images/ic_FBlogo_24px.svg',
+               '../../../../web/assets/images/ic_facebook_24px.svg',
+
            ],
            dest: 'src/sprites',
            options: {
@@ -105,9 +115,15 @@ module.exports = function(grunt) {
 ].forEach(grunt.loadNpmTasks);
 
   // Default task(s).
+  grunt.registerTask('assemble:site', [
+      'assemble:en',
+      'assemble:lt',
+  ]);
+
   grunt.registerTask('default', [
       'compass:dist',
-      'assemble:en'
+      'assemble:en',
+      'assemble:lt',
   ]);
 
 };

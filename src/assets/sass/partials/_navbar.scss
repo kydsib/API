@@ -11,11 +11,17 @@
     .nav-bar{
         height: $nav-height;
         background: $default-bg;
-        align-items: center;
+        -webkit-box-align: center;
+            -ms-flex-align: center;
+                align-items: center;
 
         color: #fff;
+        display: -webkit-box;
+        display: -ms-flexbox;
         display: flex;
-        justify-content: center;
+        -webkit-box-pack: center;
+            -ms-flex-pack: center;
+                justify-content: center;
         &--left{
             width: $nav-left-width;
 
@@ -28,21 +34,59 @@
             min-height: $nav-height;
         }
         &__lists{
+            display: -webkit-box;
+            display: -ms-flexbox;
             display: flex;
-            flex-direction: row;
+            -webkit-box-orient: horizontal;
+            -webkit-box-direction: normal;
+                -ms-flex-direction: row;
+                    flex-direction: row;
             &--left{
-            justify-content: space-between;
+            -webkit-box-pack: justify;
+                -ms-flex-pack: justify;
+                    justify-content: space-between;
             }
             &--right{
-            justify-content: space-around;
+            -ms-flex-pack: distribute;
+
+                justify-content: space-around;
             }
             &__link{
-
+              display: inline-block;
+              padding: 0 20px;
             }
             &--svg-icon{
               height: 30px;
-              
+
             }
+        }
+        .dropdown-menu{
+          &__item{
+            display: -webkit-box;
+            display: -ms-flexbox;
+            display: flex;
+            padding: 10px 20px;
+            -webkit-box-align: center;
+                -ms-flex-align: center;
+                    align-items: center;
+            .circle{
+              @include circle($width: 40px, $height: 40px)
+            }
+            &__title{
+              margin-left: 10px;
+              h5{
+                color: $text-color;
+              }
+              p{
+                color: $mid-gray;
+                line-height: 1;
+              }
+            }
+          }
+          &__header{
+            padding: 10px 20px;
+            
+          }
         }
     }
 }

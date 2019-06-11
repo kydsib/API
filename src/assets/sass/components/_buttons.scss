@@ -1,0 +1,30 @@
+@mixin default-button($height: 50px, $bacground: $default-btn){
+  display: block;
+  width: auto;
+  height: $height;
+  line-height: $height;
+  background: $bacground;
+  border: 0;
+  color: #fff;
+  border-radius: 100px;
+  -webkit-transition: $transition;
+  transition: $transition;
+  text-decoration: none;
+  text-align: center;
+  &:hover{
+    -webkit-filter: brightness(80%);
+            filter: brightness(80%);
+    background: $bacground;
+  }
+  &:focus{
+    outline: none;
+
+  }
+}
+
+.button{
+  @include default-button();
+  &--full-width{
+    width: 100%;
+  }
+}

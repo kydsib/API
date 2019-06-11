@@ -1,0 +1,21 @@
+stats:
+  visits: Lankytojai šiandien
+  revenue: Bendros pajamos
+  sales: Šiandienos pardavimai
+  conversion: Apyvarta
+graphs:
+  yearly: Metinė pardavimų ataskaita
+  yearly-revenue: Metinės pajamos
+  total-revenue: Visos pajamos
+projects:
+  latest-projects: Naujausi projektai
+  who-owns-it: Informacija apie projektus
+  project-name: Projekto pavadinimas
+  start-date: Pradžios data
+  due-date: Numatyta pabaigos data
+  status: Dabartinis statusas
+  assign: Atsakingas asmuo
+members:
+  admin: Administratorius
+  user: Vartotojas
+  master: Vadovas
